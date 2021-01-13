@@ -1,0 +1,137 @@
+/* ! 
+    Basic info
+*************
+Code Formet -> Prettier
+Style Plugin -> Bootstrap
+font -> Bebas Neue
+
+thames name -> Punguin Fashion
+extra add -> Account option, cart option
+*/
+:root{
+    --lightBg: #FFFBF0;
+    --primaryBg: #fff;
+    /* ! Background */
+
+    --secondaryTextColor:#fff;
+    --primaryTextColor: #000;
+    /* ! Font */
+
+    --btnBg:linear-gradient(16deg, #ff005a 0%, #ff5d2d 64%, #ffba00 100%);
+    /* ! Button BG */
+}
+
+body{
+    font-family: 'Bebas Neue', sans-serif;
+    
+}
+p{
+    color: #3E3E3E;
+    text-transform: none;
+}
+.btn__custom{
+    padding: 13px 30px;
+    background-image: var(--btnBg);
+    border: none;
+    color:var(--secondaryTextColor) ;
+    letter-spacing: 1.5px;
+    border-radius: 5px;
+}
+
+.btn__custom> svg{
+    margin-right: 5px;
+}
+/* ! custom buton */
+.nav__custom{
+    /* height: 90px; */
+    background-image: url('../Logo/nav-top.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--lightBg);
+}
+.nav__logo img{
+    width: 250px;
+}
+.nav__user__logo{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+/* ! nav end */
+
+.dropdown__custom,.hero__section{
+    background-color: var(--lightBg);
+}
+.hero__content{
+    padding: 2em;
+}
+.hero__content .content__title{
+    font-size: 83px;
+}
+.content__title span{
+    color: #FABE4C;
+}
+.hero__content > .hero__model{
+    width: 550px;
+}
+
+/* ! hero section end */
+.product{
+    max-width: 400px;
+    margin: 25px;
+    border-radius: 8px;
+    border: none;
+}
+.product__image{
+    background-color:#F1F1F1 ;
+    border-radius: 8px;
+    height: 350px;
+    max-height: 350px;
+    
+}
+.product__image img{
+    height: 100%;
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+.product__footer{
+    padding: 0;
+    border: 0;
+    background-color: var(--primaryBg);
+}
+
+.product__btn{
+    padding: 10px 20px;
+}
+
+/* ! products end */
+
+.support{
+    height: 120px;
+    max-width: 450px;
+}
+.support img{
+    width: 80px;
+    height: 80px;
+}
+/* ! support end */
+
+/* ! extra */
+.massage{
+    position: fixed;
+    bottom: 10%;
+    right: 10px;
+}
+.massage .btn__massage{
+    padding: 10px;
+}
+.massage svg{
+    font-size: 30px;
+}
+/* ! massage end */
+
+.news__letter{
+    background-color: var(--lightBg);
+    height: 80px;
+}
