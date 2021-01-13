@@ -7,6 +7,8 @@ font -> Bebas Neue
 
 thames name -> Punguin Fashion
 extra add -> Account option, cart option
+
+responsive -> chrome dev tool for screen measurement
 */
 :root{
     --lightBg: #FFFBF0;
@@ -22,7 +24,11 @@ extra add -> Account option, cart option
 }
 
 body{
-    font-family: 'Bebas Neue', sans-serif;
+    /*Bebas Neue has bug ,  all text automatic uppercase  
+    font-family: 'Bebas Neue', sans-serif; */
+    
+    font-family: 'Poppins', sans-serif;
+
     
 }
 p{
@@ -184,9 +190,19 @@ p{
     border-radius: 10px;
 }
 .notice{
-    height: 100%;
+    height: 400px;
 }
 .notice__img{
     width: 100%;
     height: 100%;
+}
+
+/* ! about end */
+
+/* ! responsive start */
+
+@media only screen and (max-width:1024px){
+    .product {
+        max-width: 280px;
+    }
 }
