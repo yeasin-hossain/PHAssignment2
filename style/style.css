@@ -36,6 +36,8 @@ p{
     color:var(--secondaryTextColor) ;
     letter-spacing: 1.5px;
     border-radius: 5px;
+    box-shadow:  20px 20px 28px #d1cec5,
+    -20px -20px 28px #ffffff;
 }
 
 .btn__custom> svg{
@@ -133,5 +135,14 @@ p{
 
 .news__letter{
     background-color: var(--lightBg);
-    height: 80px;
+    /* height: 80px; */
+}
+
+.news__input{
+    border: none;
+    outline: none;
+    padding: 10px 45px 10px 20px;
+    border-radius: 5px;
+    box-shadow: inset 27px 27px 53px #c7c4bb,
+    inset -27px -27px 53px #ffffff;
 }
