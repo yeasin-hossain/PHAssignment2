@@ -91,14 +91,18 @@ p{
     max-height: 350px;
     box-shadow: inset 32px 32px 63px #cdcdcd,
     inset -32px -32px 63px #cdcdcd;
-    
+    overflow: hidden;
 }
 .product__image img{
     height: 100%;
     width: 80%;
     display: block;
     margin: auto;
-    
+    cursor: pointer;
+}
+.product__image img:hover{
+    transform: scale(1, 0.90);
+    transition: transform  linear 500ms;
 }
 .product__footer{
     padding: 0;
@@ -150,4 +154,18 @@ p{
     border-radius: 5px;
     box-shadow: inset 27px 27px 53px #c7c4bb,
     inset -27px -27px 53px #ffffff;
+}
+
+/* ! end news letter */
+.top__brand {
+    overflow: hidden;
+}
+.top__brand img{
+    width: 100%;
+    height: 250px;
+    transition: transform linear 1s;
+}
+.top__brand img:hover{
+    transform: scale(1, 1.1);
+    transition: transform  linear 300ms;
 }
