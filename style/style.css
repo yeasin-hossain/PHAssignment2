@@ -89,6 +89,8 @@ p{
     border-radius: 8px;
     height: 350px;
     max-height: 350px;
+    box-shadow: inset 32px 32px 63px #cdcdcd,
+    inset -32px -32px 63px #cdcdcd;
     
 }
 .product__image img{
@@ -96,6 +98,7 @@ p{
     width: 80%;
     display: block;
     margin: auto;
+    
 }
 .product__footer{
     padding: 0;
@@ -112,6 +115,8 @@ p{
 .support{
     height: 120px;
     max-width: 450px;
+    box-shadow:  10px 10px 20px #d9d9d9,
+             -10px -10px 20px #ffffff;
 }
 .support img{
     width: 80px;
