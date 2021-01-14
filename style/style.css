@@ -26,7 +26,7 @@ responsive -> chrome dev tool for screen measurement
 body{
     /*Bebas Neue has bug ,  all text automatic uppercase  
     font-family: 'Bebas Neue', sans-serif; */
-    
+
     font-family: 'Poppins', sans-serif;
 
     
@@ -84,10 +84,10 @@ p{
 }
 
 /* ! hero section end */
-.product{
-    max-width: 400px;
+.product {
+    width: 400px;
     margin: 25px;
-    border-radius: 8px;
+    border-radius: 12px !important;
     border: none;
 }
 .product__image{
@@ -203,6 +203,59 @@ p{
 
 @media only screen and (max-width:1024px){
     .product {
-        max-width: 280px;
+        width: 280px;
+    }
+    .product__image img {
+        width: 100%;
+    }
+    
+    .product__btn {
+        padding: 10px 10px;
+        letter-spacing: 1px;
+    }
+    .support__pera,.product__pera{
+        font-size: 12px;
+    }
+    .about__nav a{
+        padding: 10px !important;
+    }
+}
+/* ! 1024px responsive ok */
+@media only screen and (max-width: 768px){
+    .hero__content .content__title {
+        font-size: 60px;
+    }
+    .product {
+        width: 320px;
+    }
+    .supprot__container,.about__container{
+        width: 100%;
+        padding: 25px 0;
+    }
+    .supports {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .about__row{
+        flex-direction: column-reverse;
+        padding: 25px 0;
+    }
+}
+
+
+@media only screen and (max-width: 425px){
+    .hero__content .content__title {
+        font-size: 40px;
+    }
+    .info{
+        justify-content: center;
+    }
+    .news__input,.news__btn{
+        margin: 10px;
+        padding: 10px 10px 10px 20px;
+    }
+    .news__form{
+        flex-direction: column;
     }
 }
