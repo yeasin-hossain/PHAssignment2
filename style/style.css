@@ -19,7 +19,9 @@ responsive -> chrome dev tool for screen measurement
     --primaryTextColor: #000;
     /* ! Font */
 
-    --btnBg:linear-gradient(16deg, #ff005a 0%, #ff5d2d 64%, #ffba00 100%);
+    /* --btnBg:linear-gradient(16deg, #ff005a 0%, #ff5d2d 64%, #ffba00 100%); */
+    --btnBg:#FA804C;
+
     /* ! Button BG */
 }
 
@@ -37,7 +39,8 @@ p{
 }
 .btn__custom{
     padding: 13px 30px;
-    background-image: var(--btnBg);
+    /* background-image: var(--btnBg); */
+    background-color: var(--btnBg);
     border: none;
     color:var(--secondaryTextColor) ;
     letter-spacing: 1.5px;
@@ -185,8 +188,7 @@ p{
     font-size: 21px;
     margin: 10px 20px !important;
     padding: 15px !important ;
-    box-shadow:  7px 7px 14px #95938c,
-             -7px -7px 14px #f9f5ea;
+    box-shadow:  0px -1px 5px #95938c, 1px -20px 0px #f9f5ea;
     border-radius: 10px;
 }
 .notice{
@@ -237,9 +239,28 @@ p{
         flex-direction: column;
         align-items: center;
     }
+    .support_row{
+        flex-direction: column-reverse;
+    }
+    .support {
+        flex-direction: column;
+        height: auto;
+        width: 80%;
+        border-radius: 10px !important;
+    }
+    .support__article{
+        text-align: center;
+    }
     .about__row{
         flex-direction: column-reverse;
         padding: 25px 0;
+    }
+    .notice__img{
+        height: auto;
+        width: auto;
+        display: block;
+        margin: auto;
+
     }
 }
 
@@ -258,4 +279,5 @@ p{
     .news__form{
         flex-direction: column;
     }
+
 }
