@@ -200,7 +200,10 @@ p{
 }
 
 /* ! about end */
-
+/* !Signle product view */
+#product__single__page{
+    width: 100%;
+}
 /* ! responsive start */
 
 @media only screen and (max-width:1024px){

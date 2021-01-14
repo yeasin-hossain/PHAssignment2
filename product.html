@@ -1,11 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yellow Coat Jacket</title>
-</head>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Penguin Fashion</title>
+		<!-- ! Google Font -->
+		<!-- <link
+			href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+			rel="stylesheet"
+        /> -->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+		<!-- ! Bootstrap -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+			crossorigin="anonymous"
+		/>
+		<!-- ! Fontawesome -->
+		<script
+			src="https://kit.fontawesome.com/a2d3b5ef0a.js"
+			crossorigin="anonymous"
+		></script>
+		<!-- ! Custom CSS -->
+		<link rel="stylesheet" href="style/style.css" />
+	</head>
 <body>
-    
+    <nav class="navbar navbar-expand-lg navbar-light nav__custom sticky-top">
+        <div class="container-fluid container">
+            <!-- Nav Logo -->
+            <a class="navbar-brand nav__logo" href="#">
+                <img class="" src="Logo/logo.png" alt="" />
+            </a>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+                class="collapse navbar-collapse justify-content-end"
+                id="navbarNavDropdown"
+            >
+                <ul class="navbar-nav">
+                    <li class="nav-item mx-3">
+                        <a class="nav-link active fs-5" aria-current="page" href="index.html"
+                            >Home</a
+                        >
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link fs-5" href="#">Product</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link fs-5" href="#">About us</a>
+                    </li>
+                    <!-- ! Dropdown -->
+                    <li class="nav-item dropdown mx-3">
+                        <a
+                            class="nav-link dropdown-toggle fs-5"
+                            href="#"
+                            id="navbarDropdownMenuLink"
+                            role="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                        >
+                            <!-- <i class="fas fa-user"></i> -->
+                            <img class="img-fluid nav__user__logo" src="Logo/Ellipse-2.png" alt="">
+                        </a>
+                        <ul
+                            class="dropdown-menu dropdown__custom"
+                            aria-labelledby="navbarDropdownMenuLink"
+                        >
+                            <li><a class="dropdown-item fs-5" href="#">Cart<i class="ms-4 fas fa-shopping-cart"></i></a></li>
+                            <li><a class="dropdown-item fs-5 mt-2" href="#">Order <i class="fas ms-4  fa-truck-moving"></i></a></li>
+                            <li>
+                                <a class="dropdown-item fs-5 mt-2" href="#">Account <i class="fas  ms-4 fa-user-circle"></i></a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="container">
+            <div class="row mt-5">
+
+                <div class="single__product col-md-5">
+                    <img class="img-fluid" src="Image/man3.png" alt="">
+                    <div class="choice mt-5">
+                        <img role="button" class="border w-25 m-5" src="Image/man3.png" alt="">
+                        <img role="button" class="border w-25" src="Image/man3.png" alt="">
+                    </div>
+                </div>
+                <!-- ! single product image part end-->
+
+                <div class="single__product col-md-7 ps-5 mb-5">
+                    <h1 class="text-center">Man Casual Jackets</h1>
+                    <p class="text-start my-3">Lorem Ipsum is simply dummy text of the 
+                        printing and typesetting industry. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero nobis eveniet, qui quidem esse soluta aperiam explicabo odit tempore quasi.</p>
+                        <h3>$500</h3>
+                    <h3>Quantity:</h3>
+                    <div class="input-group w-25 my-3">
+                        <select class="form-select" id="inputGroupSelect04" aria-label="Example select with button addon">
+                          <option selected>Choose...</option>
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                        </select>
+                      </div>
+                      <h3>Total: $234</h3>
+                      <button class="btn product__btn btn__custom text-uppercase mt-3">
+                        <i class="fas fa-shopping-cart"></i> Buy now
+                    </button>
+                    <button class="btn product__btn btn__custom text-uppercase mt-3 ms-4">
+                        <i class="fas fa-share-alt"></i> Share
+                    </button>
+                </div>
+                <!-- ! single product info part end -->
+            </div>
+        </div>
+        <section>
+            <div class="knock">
+                <div class="massage">
+                    <button class="btn btn__custom btn__massage">
+                        <i class="fas fa-sms"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    		<!-- ! Bootstrap JS -->
+		<script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"
+    ></script>
 </body>
 </html>
