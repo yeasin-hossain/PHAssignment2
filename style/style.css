@@ -312,7 +312,9 @@ footer{
     .news__form{
         flex-direction: column;
     }
-
+    .about__nav h3{
+        margin-left: 25px;
+    }
 }
 
 @media only screen and (max-width: 320px){
