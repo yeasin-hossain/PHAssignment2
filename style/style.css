@@ -311,3 +311,9 @@ footer{
     }
 
 }
+
+@media only screen and (max-width: 320px){
+    .nav__logo img {
+        width: 200px;
+    }
+}
